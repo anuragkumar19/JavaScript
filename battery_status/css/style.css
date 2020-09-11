@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #234567;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html , body {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.text-center {
+    text-align: center;
+}
+
+@keyframes battery-charging {
+    0% {
+        content: "\f244";
+    }
+    20% {
+        content: "\f243";
+    }
+    40% {
+        content: "\f242";
+    }
+    60% {
+        content: "\f241";
+    }
+    80% {
+        content: "\f240";
+    }
+}
+.fa-battery-charging:before {
+    content: "\f244";
+    animation: 2s battery-charging infinite;
+}
+
+.h2 {
+    color: #f7cb72;
+}
+
+.my {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.h3 {
+    color: #008080;
+}
