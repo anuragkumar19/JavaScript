@@ -17,7 +17,7 @@ async function render() {
     $('#contInp').val(cont);
 
     // Fetching data
-    let res = await axios.get(`https://cors-proxy.htmldriven.com/?url=https://newsapi.org/v2/top-headlines?country=${cont}&apiKey=${api}`);
+    let res = await axios.get(`https://api.allorigins.win/get?url=${encodeURIComponent(`https://newsapi.org/v2/top-headlines?country=${cont}&apiKey=${api}`)}`);
     //console.log(res);
     if (res.status !== 200) {
         genAlert('Opps! Something went wrong while makig request check your api key and country code!!', 'danger');
